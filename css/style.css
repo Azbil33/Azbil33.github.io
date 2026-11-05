@@ -2,13 +2,13 @@
 :root {
 
     /* Background*/
-    --background: #faf9f6;
-    --surface: #f0eee9;
+    --background: #041330;
+    --surface: #16004a;
     /* Text */
-    --text: #292929;
-    --text-muted: #85827d;
+    --text: #ffdede;
+    --text-muted: #bfa4b5;
     /* Links and accents */
-    --accent: #8b7355;
+    --accent: #dce1fc;
     /* Main paragraph and article text */
     --font-body: Georgia, serif;
     /* Headings, dates, navigation and interface text */
