@@ -1,11 +1,11 @@
 {
     "posts": [
         {
-            "slug": "test-post-1",
+            "slug": "first-post-1",
             "title": "first post",
             "date": "2026-11-05",
             "category": "Game dev",
-            "file": "posts/articles/test-post-1.md"
+            "file": "posts/articles/first-post-1.md"
         }
     ]
 }
