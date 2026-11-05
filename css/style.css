@@ -172,3 +172,80 @@ a {
     }
 
 }
+
+
+.article-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+    margin: 45px 0;
+}
+
+.article-row.reverse {
+    direction: rtl;
+}
+
+.article-row.reverse > * {
+    direction: ltr;
+}
+
+/* Text column */
+
+.article-text {
+    min-width: 0;
+}
+
+.article-text p:first-child {
+    margin-top: 0;
+}
+
+/* Image column */
+
+.article-media {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 0;
+}
+
+.article-media img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+}
+
+/* Two images side by side */
+
+.article-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.article-gallery img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Mobile layout */
+
+@media (max-width: 650px) {
+
+    .article-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .article-row.reverse {
+        direction: ltr;
+    }
+
+    .article-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
