@@ -1,0 +1,47 @@
+
+:root {
+
+    /* Backgrounds */
+    --background: #faf9f6;
+    --surface: #f0eee9;
+
+    /* Text colours */
+    --text: #292929;
+    --text-muted: #85827d;
+
+    /* Accent */
+    --accent: #8b7355;
+
+    /* Fonts */
+    --font-body: Georgia, serif;
+    --font-heading: Arial, sans-serif;
+
+    /* Layout */
+    --content-width: 760px;
+    --line-height: 1.8;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: var(--line-height);
+}
+
+a {
+    color: var(--accent);
+}
+
+
+.container {
+    width: min(90%, var(--content-width));
+    margin: 0 auto;
+}
