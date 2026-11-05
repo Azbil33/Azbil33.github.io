@@ -249,3 +249,146 @@ a {
     }
 
 }
+
+.homepage {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+
+
+/* INTRODUCTION */
+
+.home-header {
+    margin-bottom: 100px;
+}
+
+.home-title {
+    font-family: var(--font-heading);
+    font-size: clamp(38px, 6vw, 58px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 25px;
+}
+
+.home-introduction {
+    max-width: 650px;
+    font-size: 17px;
+    color: var(--text-muted);
+}
+
+.home-introduction p {
+    margin: 0;
+}
+
+
+/* SUBLINKS */
+
+.home-links {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+/* CATEGORY DROPDOWNS */
+
+.category {
+    border-top: 1px solid var(--surface);
+}
+
+.category:last-child {
+    border-bottom: 1px solid var(--surface);
+}
+
+.category summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 19px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: 16px;
+}
+
+.category summary::-webkit-details-marker {
+    display: none;
+}
+
+.category summary::after {
+    content: "+";
+    color: var(--text-muted);
+    font-size: 20px;
+}
+
+.category[open] summary::after {
+    content: "−";
+}
+
+
+/* ARTICLE LINKS */
+
+.category-posts {
+    padding: 0 0 20px 15px;
+}
+
+.category-posts a {
+    display: block;
+    padding: 8px 0;
+    color: var(--text-muted);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.category-posts a:hover {
+    color: var(--accent);
+}
+
+.post-link-date {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 10px;
+}
+
+
+/* EMPTY AND LOADING MESSAGES */
+
+.loading-message {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.home-footer {
+    border-top: 1px solid var(--surface);
+    padding-top: 20px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .homepage {
+        padding-top: 65px;
+    }
+
+    .home-header {
+        margin-bottom: 75px;
+    }
+
+    .home-introduction {
+        font-size: 16px;
+    }
+
+}
