@@ -1,26 +1,106 @@
 
 :root {
 
-    /* Backgrounds */
+    /* Background*/
     --background: #faf9f6;
     --surface: #f0eee9;
-
-    /* Text colours */
+    /* Text */
     --text: #292929;
     --text-muted: #85827d;
-
-    /* Accent */
+    /* Links and accents */
     --accent: #8b7355;
-
-    /* Fonts */
+    /* Main paragraph and article text */
     --font-body: Georgia, serif;
+    /* Headings, dates, navigation and interface text */
     --font-heading: Arial, sans-serif;
-
-    /* Layout */
+    /* Maximum width of the main website content */
     --content-width: 760px;
+    /* General paragraph line spacing */
     --line-height: 1.8;
+    /* Space above and below the homepage */
+    --home-top-space: 110px;
+    --home-bottom-space: 60px;
+    /* Main homepage heading */
+    --home-title-size: clamp(38px, 6vw, 58px);
+    --home-title-line-height: 1.2;
+    --home-title-bottom-space: 25px;
+    /* Introduction text */
+    --home-intro-width: 650px;
+    --home-intro-size: 17px;
+    /* Space between homepage sections */
+    --home-header-bottom-space: 100px;
+    --home-links-bottom-space: 100px;
+    /* Sublinks heading */
+    --section-title-size: 23px;
+    --section-title-bottom-space: 25px;
+    /* Category names */
+    --category-font-size: 16px;
+    --category-padding: 19px 0;
+    /* Category separators */
+    --category-border: 1px solid var(--surface);
+    /* Article links inside categories */
+    --post-link-size: 15px;
+    --post-link-padding: 8px 0;
+    --post-link-indent: 15px;
+    /* Dates next to article links */
+    --post-date-size: 12px;
+    --post-date-spacing: 10px;
+    /* Navigation above articles */
+    --article-nav-top-space: 35px;
+    --article-nav-bottom-space: 75px;
+    --article-nav-size: 14px;
+    /* Article page spacing */
+    --article-bottom-space: 100px;
+    --article-header-bottom-space: 45px;
+    /* Article date */
+    --article-date-size: 13px;
+    --article-date-bottom-space: 12px;
+    --article-date-letter-spacing: 0.04em;
+    /* Main article title */
+    --article-title-size: clamp(32px, 5vw, 48px);
+    --article-title-line-height: 1.2;
+    /* Article body text */
+    --article-text-size: 17px;
+    --article-paragraph-spacing: 25px;
+    /* Article subheadings */
+    --article-heading-line-height: 1.3;
+    --article-heading-weight: 500;
+    --article-heading-top-space: 55px;
+    --article-heading-bottom-space: 20px;
+    --article-h2-size: 28px;
+    --article-h3-size: 21px;
+    /* Article images */
+    --article-image-spacing: 35px;
+    /* Article image captions */
+    --caption-size: 13px;
+    --caption-top-space: 10px;
+    /* Blockquotes */
+    --blockquote-spacing: 35px;
+    --blockquote-indent: 22px;
+    /* Side-by-side text and image layouts */
+    --article-row-gap: 35px;
+    --article-row-spacing: 45px;
+    --article-column-width: 1fr;
+    /* Image spacing when multiple images are stacked */
+    --article-media-gap: 15px;
+    /* Image gallery */
+    --gallery-columns: repeat(2, 1fr);
+    --gallery-gap: 15px;
+    --gallery-spacing: 40px;
 
+
+    --footer-top-padding: 20px;
+    --footer-text-size: 13px;
+
+
+   
+    /* These values control the smaller-screen appearance */
+    --mobile-home-top-space: 65px;
+    --mobile-home-header-space: 75px;
+    --mobile-intro-size: 16px;
+    --mobile-article-text-size: 16px;
 }
+
 
 
 * {
@@ -40,77 +120,87 @@ a {
     color: var(--accent);
 }
 
-
 .container {
     width: min(90%, var(--content-width));
     margin: 0 auto;
 }
 
+
+/* ==================================================
+   ARTICLE NAVIGATION
+================================================== */
+
 .article-navigation {
-    padding-top: 35px;
-    margin-bottom: 75px;
+    padding-top: var(--article-nav-top-space);
+    margin-bottom: var(--article-nav-bottom-space);
 }
 
 .article-navigation a {
     color: var(--text-muted);
     text-decoration: none;
     font-family: var(--font-heading);
-    font-size: 14px;
+    font-size: var(--article-nav-size);
 }
 
 .article-navigation a:hover {
     color: var(--accent);
 }
+
+
+/* ==================================================
+   ARTICLE PAGE
+================================================== */
+
 .article {
-    padding-bottom: 100px;
+    padding-bottom: var(--article-bottom-space);
 }
 
 .article-header {
-    margin-bottom: 45px;
+    margin-bottom: var(--article-header-bottom-space);
 }
 
 .article-date {
     color: var(--text-muted);
     font-family: var(--font-heading);
-    font-size: 13px;
-    letter-spacing: 0.04em;
-    margin-bottom: 12px;
+    font-size: var(--article-date-size);
+    letter-spacing: var(--article-date-letter-spacing);
+    margin-bottom: var(--article-date-bottom-space);
 }
 
 .article-header h1 {
     font-family: var(--font-heading);
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: var(--article-title-size);
     font-weight: 500;
-    line-height: 1.2;
+    line-height: var(--article-title-line-height);
     margin: 0;
 }
 
 .article-content {
     font-family: var(--font-body);
-    font-size: 17px;
+    font-size: var(--article-text-size);
     line-height: var(--line-height);
 }
 
 .article-content p {
-    margin: 0 0 25px;
+    margin: 0 0 var(--article-paragraph-spacing);
 }
 
 .article-content h1,
 .article-content h2,
 .article-content h3 {
     font-family: var(--font-heading);
-    line-height: 1.3;
-    font-weight: 500;
-    margin-top: 55px;
-    margin-bottom: 20px;
+    line-height: var(--article-heading-line-height);
+    font-weight: var(--article-heading-weight);
+    margin-top: var(--article-heading-top-space);
+    margin-bottom: var(--article-heading-bottom-space);
 }
 
 .article-content h2 {
-    font-size: 28px;
+    font-size: var(--article-h2-size);
 }
 
 .article-content h3 {
-    font-size: 21px;
+    font-size: var(--article-h3-size);
 }
 
 .article-content a {
@@ -119,15 +209,15 @@ a {
 }
 
 .article-content blockquote {
-    margin: 35px 0;
-    padding-left: 22px;
+    margin: var(--blockquote-spacing) 0;
+    padding-left: var(--blockquote-indent);
     border-left: 2px solid var(--accent);
     color: var(--text-muted);
 }
 
 .article-content ul,
 .article-content ol {
-    margin-bottom: 25px;
+    margin-bottom: var(--article-paragraph-spacing);
     padding-left: 25px;
 }
 
@@ -135,11 +225,11 @@ a {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 35px auto;
+    margin: var(--article-image-spacing) auto;
 }
 
 .article-content figure {
-    margin: 35px 0;
+    margin: var(--article-image-spacing) 0;
 }
 
 .article-content figure img {
@@ -149,38 +239,26 @@ a {
 .article-content figcaption {
     color: var(--text-muted);
     font-family: var(--font-heading);
-    font-size: 13px;
-    margin-top: 10px;
-}
-@media (max-width: 600px) {
-
-    .article-navigation {
-        padding-top: 22px;
-        margin-bottom: 50px;
-    }
-
-    .article-content {
-        font-size: 16px;
-    }
-
-    .article-header {
-        margin-bottom: 32px;
-    }
-
-    .article-content h2 {
-        font-size: 24px;
-    }
-
+    font-size: var(--caption-size);
+    margin-top: var(--caption-top-space);
 }
 
+
+/* ==================================================
+   ARTICLE IMAGE AND TEXT LAYOUTS
+================================================== */
+
+/* Text beside an image */
 
 .article-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    grid-template-columns: var(--article-column-width) var(--article-column-width);
+    gap: var(--article-row-gap);
     align-items: start;
-    margin: 45px 0;
+    margin: var(--article-row-spacing) 0;
 }
+
+/* Reversed layout: image on the left */
 
 .article-row.reverse {
     direction: rtl;
@@ -189,6 +267,7 @@ a {
 .article-row.reverse > * {
     direction: ltr;
 }
+
 
 /* Text column */
 
@@ -200,12 +279,13 @@ a {
     margin-top: 0;
 }
 
+
 /* Image column */
 
 .article-media {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--article-media-gap);
     min-width: 0;
 }
 
@@ -216,13 +296,14 @@ a {
     object-fit: cover;
 }
 
+
 /* Two images side by side */
 
 .article-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 40px 0;
+    grid-template-columns: var(--gallery-columns);
+    gap: var(--gallery-gap);
+    margin: var(--gallery-spacing) 0;
 }
 
 .article-gallery img {
@@ -231,48 +312,34 @@ a {
     margin: 0;
 }
 
-/* Mobile layout */
 
-@media (max-width: 650px) {
-
-    .article-row {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .article-row.reverse {
-        direction: ltr;
-    }
-
-    .article-gallery {
-        grid-template-columns: 1fr;
-    }
-
-}
+/* ==================================================
+   HOMEPAGE
+================================================== */
 
 .homepage {
-    padding-top: 110px;
-    padding-bottom: 60px;
+    padding-top: var(--home-top-space);
+    padding-bottom: var(--home-bottom-space);
 }
 
 
 /* INTRODUCTION */
 
 .home-header {
-    margin-bottom: 100px;
+    margin-bottom: var(--home-header-bottom-space);
 }
 
 .home-title {
     font-family: var(--font-heading);
-    font-size: clamp(38px, 6vw, 58px);
+    font-size: var(--home-title-size);
     font-weight: 500;
-    line-height: 1.2;
-    margin: 0 0 25px;
+    line-height: var(--home-title-line-height);
+    margin: 0 0 var(--home-title-bottom-space);
 }
 
 .home-introduction {
-    max-width: 650px;
-    font-size: 17px;
+    max-width: var(--home-intro-width);
+    font-size: var(--home-intro-size);
     color: var(--text-muted);
 }
 
@@ -284,36 +351,36 @@ a {
 /* SUBLINKS */
 
 .home-links {
-    margin-bottom: 100px;
+    margin-bottom: var(--home-links-bottom-space);
 }
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 23px;
+    font-size: var(--section-title-size);
     font-weight: 500;
-    margin-bottom: 25px;
+    margin-bottom: var(--section-title-bottom-space);
 }
 
 
 /* CATEGORY DROPDOWNS */
 
 .category {
-    border-top: 1px solid var(--surface);
+    border-top: var(--category-border);
 }
 
 .category:last-child {
-    border-bottom: 1px solid var(--surface);
+    border-bottom: var(--category-border);
 }
 
 .category summary {
     list-style: none;
     cursor: pointer;
-    padding: 19px 0;
+    padding: var(--category-padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-heading);
-    font-size: 16px;
+    font-size: var(--category-font-size);
 }
 
 .category summary::-webkit-details-marker {
@@ -334,14 +401,14 @@ a {
 /* ARTICLE LINKS */
 
 .category-posts {
-    padding: 0 0 20px 15px;
+    padding: 0 0 20px var(--post-link-indent);
 }
 
 .category-posts a {
     display: block;
-    padding: 8px 0;
+    padding: var(--post-link-padding);
     color: var(--text-muted);
-    font-size: 15px;
+    font-size: var(--post-link-size);
     text-decoration: none;
 }
 
@@ -351,9 +418,9 @@ a {
 
 .post-link-date {
     font-family: var(--font-heading);
-    font-size: 12px;
+    font-size: var(--post-date-size);
     color: var(--text-muted);
-    margin-left: 10px;
+    margin-left: var(--post-date-spacing);
 }
 
 
@@ -369,26 +436,74 @@ a {
 
 .home-footer {
     border-top: 1px solid var(--surface);
-    padding-top: 20px;
+    padding-top: var(--footer-top-padding);
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: var(--footer-text-size);
 }
 
 
-/* MOBILE */
+/* ==================================================
+   MOBILE LAYOUTS
+================================================== */
+
+/* Smaller article navigation and typography */
+
+@media (max-width: 600px) {
+
+    .article-navigation {
+        padding-top: 22px;
+        margin-bottom: 50px;
+    }
+
+    .article-content {
+        font-size: var(--mobile-article-text-size);
+    }
+
+    .article-header {
+        margin-bottom: 32px;
+    }
+
+    .article-content h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* Mobile article image layouts */
+
+@media (max-width: 650px) {
+
+    .article-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .article-row.reverse {
+        direction: ltr;
+    }
+
+    .article-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Mobile homepage */
 
 @media (max-width: 600px) {
 
     .homepage {
-        padding-top: 65px;
+        padding-top: var(--mobile-home-top-space);
     }
 
     .home-header {
-        margin-bottom: 75px;
+        margin-bottom: var(--mobile-home-header-space);
     }
 
     .home-introduction {
-        font-size: 16px;
+        font-size: var(--mobile-intro-size);
     }
 
 }
