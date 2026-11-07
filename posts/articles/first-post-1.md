@@ -1,4 +1,3 @@
-# First Post
 
 This is an ordinary paragraph. I can write normally here.
 
