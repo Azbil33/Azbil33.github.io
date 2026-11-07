@@ -55,7 +55,7 @@
 
 
 /* Category separators */
---category-border: 1px solid var(--surface);
+--category-border: 1px solid rgba(220, 225, 252, 0.35);
 
 
 /* Article links inside categories */
@@ -431,8 +431,9 @@ a {
     cursor: pointer;
     padding: var(--category-padding);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 14px;
     font-family: var(--font-heading);
     font-size: var(--category-font-size);
 }
@@ -443,14 +444,13 @@ a {
 
 .category summary::after {
     content: "+";
-    color: var(--text-muted);
+    color: var(--text);
     font-size: 20px;
 }
 
 .category[open] summary::after {
     content: "−";
 }
-
 
 /* ARTICLE LINKS */
 
@@ -461,13 +461,16 @@ a {
 .category-posts a {
     display: block;
     padding: var(--post-link-padding);
-    color: var(--text-muted);
+    color: var(--text);
     font-size: var(--post-link-size);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(220, 225, 252, 0.45);
+    text-underline-offset: 4px;
 }
 
 .category-posts a:hover {
     color: var(--accent);
+    text-decoration-color: var(--accent);
 }
 
 .post-link-date {
