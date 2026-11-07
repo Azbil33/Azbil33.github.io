@@ -20,7 +20,7 @@
 
 /* General layout */
 --content-width: 1300px;
---line-height: 1.7;
+--line-height: 1.4;
 
 
 /* Homepage spacing */
@@ -156,7 +156,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--background);
+    background: linear-gradient(
+        120deg,
+        var(--background) 0%,
+        var(--background) 35%,
+        var(--surface) 100%
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text);
     font-family: var(--font-body);
     line-height: var(--line-height);
@@ -167,7 +175,7 @@ a {
 }
 
 .container {
-    width: min(94%, var(--content-width));
+    width: min(92%, var(--content-width));
     margin: 0 auto;
 }
 
