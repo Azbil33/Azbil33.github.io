@@ -1,97 +1,147 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 :root {
 
-    /* Background*/
-    --background: #041330;
-    --surface: #16004a;
-    /* Text */
-    --text: #fffcfc;
-    --text-muted: ##fcedf7;
-    /* Links and accents */
-    --accent: #dce1fc;
-    /* Main paragraph and article text */
-    --font-body: Georgia, serif;
-    /* Headings, dates, navigation and interface text */
-    --font-heading: Arial, sans-serif;
-    /* Maximum width of the main website content */
-    --content-width: 760px;
-    /* General paragraph line spacing */
-    --line-height: 1.5;
-    /* Space above and below the homepage */
-    --home-top-space: 70px;
-    --home-bottom-space: 50px;
-    /* Main homepage heading */
-    --home-title-size: clamp(38px, 6vw, 58px);
-    --home-title-line-height: 1.2;
-    --home-title-bottom-space: 25px;
-    /* Introduction text */
-    --home-intro-width: 650px;
-    --home-intro-size: 19px;
-    /* Space between homepage sections */
-    --home-header-bottom-space: 100px;
-    --home-links-bottom-space: 100px;
-    /* Sublinks heading */
-    --section-title-size: 23px;
-    --section-title-bottom-space: 25px;
-    /* Category names */
-    --category-font-size: 16px;
-    --category-padding: 19px 0;
-    /* Category separators */
-    --category-border: 1px solid var(--surface);
-    /* Article links inside categories */
-    --post-link-size: 15px;
-    --post-link-padding: 8px 0;
-    --post-link-indent: 15px;
-    /* Dates next to article links */
-    --post-date-size: 12px;
-    --post-date-spacing: 10px;
-    /* Navigation above articles */
-    --article-nav-top-space: 35px;
-    --article-nav-bottom-space: 75px;
-    --article-nav-size: 14px;
-    /* Article page spacing */
-    --article-bottom-space: 100px;
-    --article-header-bottom-space: 45px;
-    /* Article date */
-    --article-date-size: 13px;
-    --article-date-bottom-space: 12px;
-    --article-date-letter-spacing: 0.04em;
-    /* Main article title */
-    --article-title-size: clamp(32px, 5vw, 48px);
-    --article-title-line-height: 1.2;
-    /* Article body text */
-    --article-text-size: 17px;
-    --article-paragraph-spacing: 25px;
-    /* Article subheadings */
-    --article-heading-line-height: 1.3;
-    --article-heading-weight: 500;
-    --article-heading-top-space: 55px;
-    --article-heading-bottom-space: 20px;
-    --article-h2-size: 28px;
-    --article-h3-size: 21px;
-    /* Article images */
-    --article-image-spacing: 35px;
-    /* Article image captions */
-    --caption-size: 13px;
-    --caption-top-space: 10px;
-    /* Blockquotes */
-    --blockquote-spacing: 35px;
-    --blockquote-indent: 22px;
-    /* Side-by-side text and image layouts */
-    --article-row-gap: 35px;
-    --article-row-spacing: 45px;
-    --article-column-width: 1fr;
-    /* Image spacing when multiple images are stacked */
-    --article-media-gap: 15px;
-    /* Image gallery */
-    --gallery-columns: repeat(2, 1fr);
-    --gallery-gap: 15px;
-    --gallery-spacing: 40px;
+   /* Background */
+--background: #041330;
+--surface: #16004a;
+
+/* Text */
+--text: #fffcfc;
+--text-muted: #d8d6e8;
+
+/* Links and accents */
+--accent: #dce1fc;
 
 
-    --footer-top-padding: 20px;
-    --footer-text-size: 13px;
+/* Fonts */
 
+/* Main paragraph and article text */
+--font-body: 'Nunito', sans-serif;
+
+/* Headings, dates and interface text */
+--font-heading: 'Nunito', sans-serif;
+
+
+/* General layout */
+--content-width: 920px;
+--line-height: 1.7;
+
+
+/* Homepage spacing */
+--home-top-space: 70px;
+--home-bottom-space: 50px;
+
+
+/* Main homepage heading */
+--home-title-size: clamp(42px, 6vw, 66px);
+--home-title-line-height: 1.2;
+--home-title-bottom-space: 25px;
+
+
+/* Introduction text */
+--home-intro-width: 780px;
+--home-intro-size: 20px;
+
+
+/* Homepage section spacing */
+--home-header-bottom-space: 100px;
+--home-links-bottom-space: 100px;
+
+
+/* Sublinks heading */
+--section-title-size: 27px;
+--section-title-bottom-space: 25px;
+
+
+/* Category names */
+--category-font-size: 19px;
+--category-padding: 21px 0;
+
+
+/* Category separators */
+--category-border: 1px solid var(--surface);
+
+
+/* Article links inside categories */
+--post-link-size: 17px;
+--post-link-padding: 9px 0;
+--post-link-indent: 18px;
+
+
+/* Dates next to article links */
+--post-date-size: 13px;
+--post-date-spacing: 12px;
+
+
+/* Navigation above articles */
+--article-nav-top-space: 35px;
+--article-nav-bottom-space: 75px;
+--article-nav-size: 15px;
+
+
+/* Article page spacing */
+--article-bottom-space: 100px;
+--article-header-bottom-space: 45px;
+
+
+/* Article date */
+--article-date-size: 14px;
+--article-date-bottom-space: 12px;
+--article-date-letter-spacing: 0.04em;
+
+
+/* Main article title */
+--article-title-size: clamp(36px, 5vw, 56px);
+--article-title-line-height: 1.2;
+
+
+/* Article body text */
+--article-text-size: 19px;
+--article-paragraph-spacing: 28px;
+
+
+/* Article subheadings */
+--article-heading-line-height: 1.3;
+--article-heading-weight: 700;
+--article-heading-top-space: 55px;
+--article-heading-bottom-space: 20px;
+--article-h2-size: 31px;
+--article-h3-size: 24px;
+
+
+/* Article images */
+--article-image-spacing: 35px;
+
+
+/* Article image captions */
+--caption-size: 14px;
+--caption-top-space: 10px;
+
+
+/* Blockquotes */
+--blockquote-spacing: 35px;
+--blockquote-indent: 22px;
+
+
+/* Side-by-side text and image layouts */
+--article-row-gap: 40px;
+--article-row-spacing: 45px;
+--article-column-width: 1fr;
+
+
+/* Image spacing when multiple images are stacked */
+--article-media-gap: 15px;
+
+
+/* Image gallery */
+--gallery-columns: repeat(2, 1fr);
+--gallery-gap: 15px;
+--gallery-spacing: 40px;
+
+
+/* Footer */
+--footer-top-padding: 20px;
+--footer-text-size: 14px;
 
    
     /* These values control the smaller-screen appearance */
