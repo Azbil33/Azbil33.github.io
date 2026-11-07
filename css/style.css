@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;500;600;700&display=swap');
 :root {
 
-   /* Background */
+  /* Background */
 --background: #041330;
 --surface: #16004a;
 
@@ -14,16 +14,12 @@
 
 
 /* Fonts */
-
-/* Main paragraph and article text */
---font-body: 'Nunito', sans-serif;
-
-/* Headings, dates and interface text */
---font-heading: 'Nunito', sans-serif;
+--font-body: 'Akshar', sans-serif;
+--font-heading: 'Akshar', sans-serif;
 
 
 /* General layout */
---content-width: 920px;
+--content-width: 1300px;
 --line-height: 1.7;
 
 
@@ -33,29 +29,29 @@
 
 
 /* Main homepage heading */
---home-title-size: clamp(42px, 6vw, 66px);
---home-title-line-height: 1.2;
---home-title-bottom-space: 25px;
+--home-title-size: clamp(48px, 6vw, 76px);
+--home-title-line-height: 1.15;
+--home-title-bottom-space: 30px;
 
 
 /* Introduction text */
---home-intro-width: 780px;
---home-intro-size: 20px;
+--home-intro-width: 950px;
+--home-intro-size: 23px;
 
 
 /* Homepage section spacing */
---home-header-bottom-space: 100px;
+--home-header-bottom-space: 110px;
 --home-links-bottom-space: 100px;
 
 
 /* Sublinks heading */
---section-title-size: 27px;
---section-title-bottom-space: 25px;
+--section-title-size: 32px;
+--section-title-bottom-space: 30px;
 
 
 /* Category names */
---category-font-size: 19px;
---category-padding: 21px 0;
+--category-font-size: 22px;
+--category-padding: 24px 0;
 
 
 /* Category separators */
@@ -63,20 +59,20 @@
 
 
 /* Article links inside categories */
---post-link-size: 17px;
---post-link-padding: 9px 0;
---post-link-indent: 18px;
+--post-link-size: 19px;
+--post-link-padding: 10px 0;
+--post-link-indent: 20px;
 
 
 /* Dates next to article links */
---post-date-size: 13px;
---post-date-spacing: 12px;
+--post-date-size: 15px;
+--post-date-spacing: 14px;
 
 
 /* Navigation above articles */
 --article-nav-top-space: 35px;
 --article-nav-bottom-space: 75px;
---article-nav-size: 15px;
+--article-nav-size: 16px;
 
 
 /* Article page spacing */
@@ -91,13 +87,13 @@
 
 
 /* Main article title */
---article-title-size: clamp(36px, 5vw, 56px);
---article-title-line-height: 1.2;
+--article-title-size: clamp(42px, 5vw, 64px);
+--article-title-line-height: 1.15;
 
 
 /* Article body text */
---article-text-size: 19px;
---article-paragraph-spacing: 28px;
+--article-text-size: 21px;
+--article-paragraph-spacing: 32px;
 
 
 /* Article subheadings */
@@ -105,8 +101,8 @@
 --article-heading-weight: 700;
 --article-heading-top-space: 55px;
 --article-heading-bottom-space: 20px;
---article-h2-size: 31px;
---article-h3-size: 24px;
+--article-h2-size: 36px;
+--article-h3-size: 28px;
 
 
 /* Article images */
@@ -114,7 +110,7 @@
 
 
 /* Article image captions */
---caption-size: 14px;
+--caption-size: 16px;
 --caption-top-space: 10px;
 
 
@@ -124,7 +120,7 @@
 
 
 /* Side-by-side text and image layouts */
---article-row-gap: 40px;
+--article-row-gap: 50px;
 --article-row-spacing: 45px;
 --article-column-width: 1fr;
 
@@ -171,7 +167,7 @@ a {
 }
 
 .container {
-    width: min(90%, var(--content-width));
+    width: min(94%, var(--content-width));
     margin: 0 auto;
 }
 
