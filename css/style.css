@@ -5,8 +5,8 @@
     --background: #041330;
     --surface: #16004a;
     /* Text */
-    --text: #ffdede;
-    --text-muted: #bfa4b5;
+    --text: ##fffcfc;
+    --text-muted: ##fcedf7;
     /* Links and accents */
     --accent: #dce1fc;
     /* Main paragraph and article text */
@@ -16,17 +16,17 @@
     /* Maximum width of the main website content */
     --content-width: 760px;
     /* General paragraph line spacing */
-    --line-height: 1.8;
+    --line-height: 1.5;
     /* Space above and below the homepage */
-    --home-top-space: 110px;
-    --home-bottom-space: 60px;
+    --home-top-space: 70px;
+    --home-bottom-space: 50px;
     /* Main homepage heading */
     --home-title-size: clamp(38px, 6vw, 58px);
     --home-title-line-height: 1.2;
     --home-title-bottom-space: 25px;
     /* Introduction text */
     --home-intro-width: 650px;
-    --home-intro-size: 17px;
+    --home-intro-size: 19px;
     /* Space between homepage sections */
     --home-header-bottom-space: 100px;
     --home-links-bottom-space: 100px;
