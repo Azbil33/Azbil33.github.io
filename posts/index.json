@@ -2,7 +2,7 @@
     "posts": [
         {
             "slug": "first-post-1",
-            "title": "first post",
+            "title": "first post 3",
             "date": "2026-11-05",
             "category": "Game dev",
             "file": "posts/articles/first-post-1.md"
